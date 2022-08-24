@@ -11,9 +11,11 @@ let inputfield = document.getElementById('inputfield')
     paragraph.addEventListener('click', function(){
         paragraph.style.textDecoration ="line-through"
     })
-    paragraph.addEventListener('click',function(){
-        todocontainer.classlist.remove('taskbutton');
+    paragraph.addEventListener('dblclick' , function(){
+        todocontainer.removeChild(paragraph);
+
     })
+    
 })
 
 
